@@ -7,6 +7,11 @@ class CommentsController < ApplicationController
       redirect_to @post  
     end
 
+    # def destroy
+    #   @post.comment.destroy
+    #   redirect_to @post
+    # end
+
     private
     def set_post
       @post = Post.find(params[:post_id])
